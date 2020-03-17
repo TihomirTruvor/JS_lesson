@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*С помощью рекурсии организовать функцию возведения числа в степень.
+        Формат: function power(val, pow), где val – заданное число, pow – степень.*/
+
+        val = parseInt(prompt("Введите целое число: ")); // Объявляем переменную "val"
+        pow = parseInt(prompt("Введите степень числа: ")); // Объявляем переменную "pow"
+        function power(val, pow) { // Объявляем функцию "power" c параметрами (переменые "val" и "pow")
+            if (pow == 1) { // Объявляем оператор if(если) c условием (pow == 1)
+                return val; // Возвращаем переменную "val" равную самой себе
+            } else { // Объявляем блок оператора if else(иначе)
+                return val * power(val, pow - 1); // Возвращаем переменную "val" со значением val * val в степени pow-1 (или как то так;) )
+            }
+        }
+       alert(power(val, pow)); // Выводим на экран (Не пойму почему именно так делать вывод, мы же должны вывести только значение переменной "val"
+    </script>
+</body>
+</html>
