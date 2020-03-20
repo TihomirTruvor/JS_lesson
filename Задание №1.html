@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание № 1</title>
+    <script>
+    /*С помощью цикла while вывести все простые числа в промежутке от 0 до 100*/
+
+    let a = 1;
+    let Arr = [];
+
+    while (a <= 100)
+    {
+        if (a == 1) {
+            Arr.push(1)
+        }
+        else
+            {
+            let b = 2;
+
+            while (a % b !== 0)
+            {
+                b++;
+            }
+            if (b == a) {
+                Arr.push(b);
+            }
+        }
+        a++;
+    }
+    document.write(Arr);
+
+    </script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
