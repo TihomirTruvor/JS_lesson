@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		/*a) написать функцию, которыая собирает все ссылки на видео с главной страницы в массив
+		- ищем элементы по id (#video-title-link) на странице youtube.com
+		- сохраняем в массив и возвращаем его из функции
+
+			вот такое должна возвращать функция после вставки в кносоль на ютубе
+			[https://youtube.com/video1, https://youtube.com/video2, https://youtube.com/video3]
+		*/
+
+		/*a)*/ 
+		let name = document.querySelectorAll('#video-title-link');
+
+		name.forEach(function(link){
+			console.log(link.href);}
+			)
+
+		/*или Array.from(name).forEach(function(link){
+			console.log(link.href);})
+
+			разницы я почему-то не заметил ;) 
+
+			или так надо?: */
+
+		name.forEach(function(link){
+			console.log([link.href]);}
+			)
+
+		/*b) функция, которая отдает объект с учениками
+		- ищем всех на странице https://geekbrains.ru/teacher/lessons/60275
+		- сохраняем в объект и функция возвращает объект
+
+			вот такое должна возвращать функция после вставки в кносоль на гикбрейнсе
+			{
+			'имя ученика1': 'ссылка на профиль1',
+			'имя ученика2': 'ссылка на профиль2',
+			'имя ученика3': 'ссылка на профиль3',}
+			и т.д
+		*/
+
+		let nameTwo = document.querySelectorAll('.mates-list__mate-name-block');
+
+		nameTwo.forEach(function(item){
+			console.log(item.innerHTML); 
+			console.log(item.href);}
+			) 
+	</script>
+
+
+
+</body>
+</html>
