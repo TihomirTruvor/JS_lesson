@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#board {
+	display: flex;
+	margin: 0 auto;
+	width: 800px;
+	height: 800px;
+	border: 35px solid #b89569;
+	outline: none;
+	box-shadow: none;
+	flex-wrap: wrap;
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+
+	/*outline: none;
+	box-shadow: none;
+	border: 2px solid #DEB887;*/
+
+}
