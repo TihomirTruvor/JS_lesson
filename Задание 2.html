@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*создать функцию конструтор для фруктов Fruit (не больше 10 строчек кода)
+		let apple = new Fruit('зеленое', 'круглое')
+		console.log(apple) // { ... }
+		let banan = new Fruit('желтый', 'длинный')
+		+
+		задайте метод, showFruit, который будет у созданных объектов apple и banan, который выводит цвет и форму через пробел
+
+		при вызове
+		apple.showFruit()
+		покажет в консоли: 'зеленое круглое'*/
+
+
+		let apple = new Fruit('зеленое', 'круглое');
+		let banan = new Fruit('желтый', 'длинный');
+
+		function Fruit(color, form) {
+			this.color = color;
+			this.form = form;
+			this.showFruit = function() {
+			console.log(this.color);
+			console.log(this.form);
+			}
+		}
+
+		apple.showFruit();
+		banan.showFruit();
+
+	</script>
+</body>
+</html>
