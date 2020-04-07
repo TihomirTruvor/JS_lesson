@@ -16,3 +16,11 @@ body {
 	width: 100px;
 	height: 100px;
 }
+
+.cell.light {
+	background: #ffffff;
+}
+
+.cell.dark {
+	background: #deb887;
+}
