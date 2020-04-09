@@ -36,16 +36,6 @@ this.style.backgroundColor = this.style.backgroundColor ? "" : "#6ede4c";
 	});
 };
 
-/*function cellHover(cell) { // Функция наведения курсора
-	cell.addEventListener("mouseover", function() { // при наведении
-		this.style.backgroundColor = "#e0f1c8";
-		this.style.cursor = "pointer";
-	});
-
-	cell.addEventListener("mouseout", function() {  // при выходе с ячейки
-		this.style.backgroundColor = ""; // не могу вернуть цвет по умолчанию!!!
-	});
-};*/
 
 /*for (let i = 1; i < 65; i++) { // генерируем 64 ячейки
 	const cell = document.createElement('div'); // создаем переменную ячейки в цикле
@@ -120,6 +110,18 @@ this.style.backgroundColor = this.style.backgroundColor ? "" : "#6ede4c"; // к�
       knight: '&#9816',
       pawn: '&#9817',
   }
+};*/
+
+
+/*function cellHover(cell) { // Функция наведения курсора (не правильно работает)
+	cell.addEventListener("mouseover", function() { // при наведении
+		this.style.backgroundColor = "#e0f1c8";
+		this.style.cursor = "pointer";
+	});
+
+	cell.addEventListener("mouseout", function() {  // при выходе с ячейки
+		this.style.backgroundColor = ""; // не могу вернуть цвет по умолчанию!!!
+	});
 };*/
 
 

@@ -24,3 +24,7 @@ body {
 .cell.dark {
 	background: #deb887;
 }
+
+.cell:hover {
+	background-color: #e0f1c8;
+}
