@@ -3,7 +3,7 @@ body {
 	padding: 0;
 }
 
-#board {
+#chess{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
@@ -15,6 +15,9 @@ body {
 .cell {
 	width: 100px;
 	height: 100px;
+	font-size: 75px;
+	text-align: center;
+
 }
 
 .cell.light {
@@ -27,4 +30,8 @@ body {
 
 .cell:hover {
 	background-color: #e0f1c8;
+}
+
+.cell.active {
+	background-color: #6ede4c;
 }
